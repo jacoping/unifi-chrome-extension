@@ -1,0 +1,22 @@
+
+{
+  "manifest_version": 2,
+  "name": "Unifi Chrome Extension",
+  "version": "0.1",
+
+"browser_action": {
+  "default_icon": "salomone.png",
+  "default_title": "Unifi Helper",
+  "default_popup": "popup.html"
+},
+
+"content_scripts": [
+  {
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": ["content.js"]
+  }
+]
+
+}
